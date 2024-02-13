@@ -1,0 +1,318 @@
+﻿@using Models;
+@using Services;
+@using Microsoft.Extensions.Logging;
+@inject ILogger<SolicitarPrestamo> Logger
+@inject LibroService LibroService
+@inject SocioService SocioService
+@inject PrestamoService prestamoService
+
+
+
+<h3>Solicitar libro</h3>
+
+@if (mostrarError)
+{
+    <div class="alert alert-danger">No se encontró ningún libro con el ID ingresado, intente buscar el ID correcto con F4.</div>
+}
+
+@if (seleccionError)
+{
+    <div class="alert alert-danger">Debe seleccionar un ID de socio para solicitar el prestamo.</div>
+}
+
+@if (registroExitoso)
+{
+    <div class="alert alert-success">El prestamo se ha registrado correctamente.</div>
+}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="short-column"></th>
+            <th class="short-column">Id</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th class ="short-column">Páginas</th>
+            <th class="short-column">Cantidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fila in filas)
+        {
+            <tr>
+                <td class="text-center">
+                    <a> <i class="oi oi-caret-right"></i> </a>
+                </td>
+                <td>
+                    <input type="number" min="0" class="short-input" @bind="@fila.Id" @onkeyup="@(e => AccionesInput(e, fila))">
+                </td>
+                @*Expresion ternaria
+                  condición ? expresión_verdadera : expresión_falsa*@
+                <td>@(fila.Libro != null ? fila.Libro.Titulo : "")</td>
+                <td>@(fila.Libro != null ? fila.Libro.Autor : "")</td>
+                <td>@(fila.Libro != null ? fila.Libro.NumPag.ToString() : "")</td>
+                <td class="text-center">
+                    <input type="number" min="1" class="short-input" @bind="@fila.Cantidad" @onblur="ActualizarTotal" @onkeyup="@(e => NuevaFila(e))">
+                </td>
+              
+            </tr>
+        }
+        
+    </tbody>
+</table>
+
+<div class="input-group">
+    <span class="input-group-text"><strong>ID Socio</strong></span>
+    <select class="form-select" @onchange="SeleccionarSocio">
+        <option>Seleccionar ID</option>
+        @foreach (var dato in ListaID)
+        {
+            <option>@dato</option>
+        }
+    </select>
+    <span class="input-group-text"><strong>Total libros solicitados</strong></span>
+    <input type="text" class="form-control custom-input" @bind="@Total" readonly>
+    <button class="btn btn-sm btn-success" @onclick="() => Guardar()">
+        <i class="oi oi-circle-check"></i>
+    </button>
+</div>
+
+
+<br />
+
+@if (modalBusqueda)
+{
+    <div class="modal" tabindex="-1" style="display:block">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sección de busqueda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick=CerrarModal></button>
+                </div>
+                <div class="modal-body">
+                    <p>Escriba el nombre del libro que desea buscar </p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="Busqueda"> <i class="oi oi-book"></i></span>
+                        <input type="text" class="form-control"  @bind="nombreLibro" aria-describedby="Busqueda" aria-label="Nombre del libro que se desea buscar">
+                        <button class="btn btn-primary" @onclick="() => Busqueda(nombreLibro)">
+                            <i class="oi oi-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>                               
+                                <th class="short-column">Id</th>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th class="short-column">Páginas</th>
+                                <th class="short-column"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var libro in listaLibros)
+                            {
+                                <tr class="@((cambioColor && libro != null && libro.Id == LibroSeleccionadoId) ? "fila-seleccionada" : "")">
+                                    <td>@(libro != null ? libro.Id : "")</td>
+                                    <td>@(libro != null ? libro.Titulo : "")</td>
+                                    <td>@(libro != null ? libro.Autor : "")</td>
+                                    <td>@(libro != null ? libro.NumPag : "")</td>
+                                    <td>
+                                        <button class="btn btn-primary" @onclick="() => SeleccionarLibro(libro.Id)">
+                                            <i class="oi oi-circle-check"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick=CerrarModal>Cancelar</button>
+                    <button type="button" class="btn btn-success" @onclick="CargarLibro">
+                        Cargar
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private class FilaLibro
+    {
+        public int Id { get; set; }
+        public Libro Libro { get; set; }
+        public int Cantidad { get; set; }
+
+    }
+
+    private List<FilaLibro> filas = new List<FilaLibro> { new FilaLibro() };
+    private List<int> ListaID = new List<int>();
+    private List<Libro> listaLibros = new List<Libro>();
+    private FilaLibro FilaSel;
+
+    private string nombreLibro;
+
+    private bool mostrarError = false;
+    private bool registroExitoso = false;
+    private bool seleccionError = false;
+    private bool modalBusqueda = false;
+    bool cambioColor = false;
+
+    private int socioSeleccionado;
+    private int Total = 0;
+    private int LibroSeleccionadoId = 0;
+    
+
+    private void SeleccionarLibro(int libroId)
+    {
+        LibroSeleccionadoId = libroId;
+        cambioColor = true;
+    }
+
+    private async Task CargarLibro()
+    {
+        if (LibroSeleccionadoId != 0)
+        {
+            var libro = await LibroService.Detalles(LibroSeleccionadoId);
+            if (libro != null)
+            {
+                FilaSel.Id = LibroSeleccionadoId;
+                FilaSel.Libro = libro;
+
+                ActualizarTotal();
+            }
+        }
+
+        // Cierra el modal de búsqueda
+        modalBusqueda = false;
+
+        //Limpia el input y la lista
+        nombreLibro = "";
+        listaLibros = new List<Libro>();
+    }
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListaID = await SocioService.ListarID();
+    }
+
+    private async Task AccionesInput(KeyboardEventArgs e, FilaLibro fila)
+    {
+        //Cargar detalles Libro
+        if (e.Key == "Enter")
+        {
+            registroExitoso = false;
+            fila.Libro = await LibroService.Detalles(fila.Id);
+
+            if (fila.Libro == null)
+            {
+                mostrarError = true;
+            }
+            else
+            {
+                mostrarError = false;
+
+            }
+        }
+
+        //Eliminar Fila
+        if (e.Key == "F8" && filas.Count > 1)
+        {
+            filas.Remove(fila);
+            ActualizarTotal();
+        }
+
+        //Modal de busqueda
+        if (e.Key == "F4")
+        {
+            mostrarError = false;
+
+            FilaSel = fila;
+            modalBusqueda = true;
+        }
+    }
+
+    private async Task Busqueda(string cadena)
+    {
+        listaLibros = await LibroService.Buscar(cadena);
+    }
+
+   
+
+
+    private void NuevaFila(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            filas.Add(new FilaLibro());
+            ActualizarTotal();
+        }
+        
+    }
+
+   
+    private void ActualizarTotal()
+    {
+        int total = 0;
+        foreach (var fila in filas)
+        {
+            total += fila.Cantidad;
+        }
+        Total = total;
+    }
+
+    private void SeleccionarSocio(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out int idSocio))
+        {
+            socioSeleccionado = idSocio;
+        }
+    }
+
+
+    private void Guardar()
+    {
+        if (socioSeleccionado == 0)
+        {
+            seleccionError = true;
+        }
+        else
+        {
+            List<Prestamo> prestamos = new List<Prestamo>();
+
+            foreach (var fila in filas)
+            {
+                Prestamo prestamo = new Prestamo
+                    {
+                        libro = new Libro { Id = fila.Id },
+                        socio = new Socio { Id = socioSeleccionado },
+                        fprestamo = DateTime.Now,
+                        cantidad = fila.Cantidad
+                    };
+
+                prestamos.Add(prestamo);
+            }
+
+            prestamoService.Guardar(prestamos);
+            registroExitoso = true;
+            seleccionError =false;
+            filas = new List<FilaLibro> { new FilaLibro() };
+            Total = 0;
+            
+        }
+
+        
+    }
+
+    private void CerrarModal()
+    {
+        modalBusqueda = false;
+        
+    }
+
+}
+

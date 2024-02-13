@@ -1,0 +1,173 @@
+﻿@using Models;
+@using Services;
+@inject LibroService LibroService
+
+
+<h3>Listado de libros</h3>
+
+@if (listaLibros == null)
+{
+    <p>Cargando...</p>
+}
+else if (listaLibros.Count == 0)
+{
+    <p>No hay libros disponibles.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Páginas</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var libro in listaLibros)
+            {
+                <tr>
+                    <td>@libro.Id</td>
+                    <td>@libro.Titulo</td>
+                    <td>@libro.Autor</td>
+                    <td>@libro.NumPag</td>
+                    @*<td><a href="/EditarLibro/@libro.Id"> <i class="oi oi-pencil"></i> </a></td>*@
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => AbrirModalEditar(libro)">
+                            <i class="oi oi-pencil"></i>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" @onclick="() => AbrirModal(libro.Id)">
+                            <i class="oi oi-x"></i> 
+                        </button>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (modalEliminar)
+    {
+        <div class="modal" tabindex="-1" style="display:block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmar eliminación</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick=CerrarModal></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Desea eliminar el libro número @ID?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick=CerrarModal>Cancelar</button>
+                        <button type="button" class="btn btn-success" @onclick=BorrarLibro>Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+    @if (modalEditar)
+    {
+        <div class="modal" tabindex="-1" style="display:block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmar eliminación</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick=CerrarModal></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Editar Libro @libro.Id</h4>
+
+                        <EditForm Model="libro">
+                            <DataAnnotationsValidator />
+
+                            <div class="form-group">
+                                <label for="titulo">Título:</label>
+                                <InputText id="titulo" class="form-control" @bind-Value="@libro.Titulo" />
+                                <ValidationMessage For="@(() => libro.Titulo)" />
+                            </div>
+                            <div class="form-group">
+                                <label for="autor">Autor:</label>
+                                <InputText id="autor" class="form-control" @bind-Value="@libro.Autor" />
+                                <ValidationMessage For="@(() => libro.Autor)" />
+                            </div>
+                            <div class="form-group">
+                                <label for="numPag">Número de Páginas:</label>
+                                <InputNumber id="numPag" class="form-control" @bind-Value="@libro.NumPag" />
+                                <ValidationMessage For="@(() => libro.NumPag)" />
+                            </div>
+
+                            <br /> <button type="submit" class="btn btn-primary" @onclick=Guardar>Editar Libro</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick=CerrarModal>Cancelar</button>
+                            
+                        </EditForm>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    }
+}
+
+
+
+@code {
+    private List<Libro> listaLibros;
+    Libro libro = new Libro();
+
+    private bool modalEliminar = false;
+    private bool modalEditar = false;
+    private int ID = 0;
+    
+
+    private void CerrarModal()
+    {
+        modalEliminar = false;
+        modalEditar = false;
+    }
+
+    protected async Task Guardar()
+    {
+        await LibroService.Editar(libro);
+        modalEditar = false;
+        listaLibros = await LibroService.Listar();
+    }
+
+    private async Task BorrarLibro()
+    {
+        await LibroService.Borrar(ID);
+        modalEliminar = false;
+        listaLibros = await LibroService.Listar();
+    }
+
+    private void AbrirModal(int id)
+    {
+        modalEliminar = true;
+        ID = id;
+    }
+
+    private void AbrirModalEditar(Libro _libro)
+    {
+        modalEditar = true;
+        libro = _libro;
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            listaLibros = await LibroService.Listar();
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+}

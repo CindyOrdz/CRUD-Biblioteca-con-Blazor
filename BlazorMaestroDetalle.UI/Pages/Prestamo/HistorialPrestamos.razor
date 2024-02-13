@@ -1,0 +1,76 @@
+﻿@using Models;
+@using Services;
+@inject PrestamoService PrestamoService
+
+
+<h3>Historial de prestamos</h3>
+
+@if (listaPrestamos == null)
+{
+    <p>Cargando...</p>
+}
+else if (listaPrestamos.Count == 0)
+{
+    <p>No hay socios registrados.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Libro</th>
+                <th>Titulo</th>
+                <th>Cantidad</th>
+                <th>Socio</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Prestamo</th>
+                <th>Devolución</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prestamo in listaPrestamos)
+            {
+                <tr>
+                    <td>@prestamo.libro.Id</td>
+                    <td>@prestamo.libro.Titulo</td>
+                    <td>@prestamo.cantidad</td>
+                    <td>@prestamo.socio.Id</td>
+                    <td>@prestamo.socio.Nombre</td>
+                    <td>@prestamo.socio.Apellidos</td>
+                    <td>@prestamo.fprestamo.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        @if (prestamo.fdevolucion == DateTime.MinValue)
+                        {
+                            <strong>Sin devolver</strong>
+                        }
+                        else
+                        {
+                            @prestamo.fdevolucion.ToString("yyyy-MM-dd")
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Prestamo> listaPrestamos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            listaPrestamos = await PrestamoService.Listar();
+
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+    }
+}

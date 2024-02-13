@@ -1,0 +1,50 @@
+﻿@using Models; 
+@using Services;
+@inject LibroService LibroService
+
+<h3>Agregar Libro</h3>
+
+<EditForm Model="libro" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="titulo">Título:</label>
+        <InputText id="titulo" class="form-control" @bind-Value="@libro.Titulo" />
+        <ValidationMessage For="@(() => libro.Titulo)" />
+    </div>
+    <div class="form-group">
+        <label for="autor">Autor:</label>
+        <InputText id="autor" class="form-control" @bind-Value="@libro.Autor" />
+        <ValidationMessage For="@(() => libro.Autor)" />
+    </div>
+    <div class="form-group">
+        <label for="numPag">Número de Páginas:</label>
+        <InputNumber id="numPag" class="form-control" @bind-Value="@libro.NumPag" />
+        <ValidationMessage For="@(() => libro.NumPag)" />
+    </div>
+
+    <br /> <button type="submit" class="btn btn-primary">Agregar </button>
+
+</EditForm>
+<br />
+
+@if (showSuccessMessage)
+{
+        <div class="alert alert-success">El libro se ha insertado correctamente.</div>
+}
+
+@code {
+
+    Libro libro = new Libro();
+    private bool showSuccessMessage = false;
+
+    protected async Task Guardar()
+    {
+        await LibroService.Guardar(libro);
+        showSuccessMessage = true;
+    }
+
+
+
+}
+

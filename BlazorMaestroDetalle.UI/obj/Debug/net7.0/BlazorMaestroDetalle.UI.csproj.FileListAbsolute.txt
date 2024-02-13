@@ -1,0 +1,110 @@
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\appsettings.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.staticwebassets.runtime.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.exe
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.deps.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.runtimeconfig.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.pdb
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\K4os.Hash.xxHash.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\MySql.Data.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BouncyCastle.Crypto.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.csproj.AssemblyReference.cache
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.AssemblyInfoInputs.cache
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.AssemblyInfo.cs
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.csproj.CoreCompileInputs.cache
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.RazorAssemblyInfo.cache
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.RazorAssemblyInfo.cs
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.BlazorMaestroDetalle.UI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.build.BlazorMaestroDetalle.UI.props
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BlazorMaestroDetalle.UI.props
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BlazorMaestroDetalle.UI.props
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\bundle\BlazorMaestroDetalle.UI.styles.css
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\projectbundle\BlazorMaestroDetalle.UI.bundle.scp.css
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.csproj.CopyComplete
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\refint\BlazorMaestroDetalle.UI.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.pdb
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.genruntimeconfig.cache
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\ref\BlazorMaestroDetalle.UI.dll
+C:\Users\Lorena\source\repos\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\appsettings.Development.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\appsettings.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.staticwebassets.runtime.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.exe
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.deps.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.runtimeconfig.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BlazorMaestroDetalle.UI.pdb
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\Google.Protobuf.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\K4os.Hash.xxHash.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\MySql.Data.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\BouncyCastle.Crypto.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.csproj.AssemblyReference.cache
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.AssemblyInfoInputs.cache
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.AssemblyInfo.cs
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.csproj.CoreCompileInputs.cache
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.RazorAssemblyInfo.cache
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.RazorAssemblyInfo.cs
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.BlazorMaestroDetalle.UI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.build.BlazorMaestroDetalle.UI.props
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.BlazorMaestroDetalle.UI.props
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BlazorMaestroDetalle.UI.props
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets.build.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\staticwebassets.development.json
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\bundle\BlazorMaestroDetalle.UI.styles.css
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\scopedcss\projectbundle\BlazorMaestroDetalle.UI.bundle.scp.css
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.csproj.CopyComplete
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\refint\BlazorMaestroDetalle.UI.dll
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.pdb
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\BlazorMaestroDetalle.UI.genruntimeconfig.cache
+D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\obj\Debug\net7.0\ref\BlazorMaestroDetalle.UI.dll

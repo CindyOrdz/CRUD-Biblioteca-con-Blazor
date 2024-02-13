@@ -1,0 +1,190 @@
+﻿@using Models; 
+@using Services;
+@inject SocioService SocioService
+
+
+<h3>Listado de socios</h3>
+
+@if (listaSocios == null)
+{
+    <p>Cargando...</p>
+}
+else if (listaSocios.Count == 0)
+{
+    <p>No hay socios registrados.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Telefono</th>
+                <th>Fecha Ingreso</th>
+                <th>Correo</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var socio in listaSocios)
+            {
+                <tr>
+                    <td>@socio.Id</td>
+                    <td>@socio.Nombre</td>
+                    <td>@socio.Apellidos</td>
+                    <td>@socio.Telefono</td>
+                    <td>@socio.Ingreso.ToString("yyyy-MM-dd")</td>
+                    <td>@socio.Correo</td>
+                    @*<td><a href="/PrincipalSocio/@socio.Id"> <i class="oi oi-pencil"></i> </a></td>*@
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => AbrirModalEditar(socio)">
+                            <i class="oi oi-pencil"></i>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" @onclick="() => AbrirModal(socio.Id)">
+                            <i class="oi oi-x"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (modalEliminar)
+{
+    <div class="modal" tabindex="-1" style="display:block">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick=CerrarModal></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Desea eliminar el socio @ID?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick=CerrarModal>Cancelar</button>
+                    <button type="button" class="btn btn-success" @onclick=BorrarSocio>Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@if (modalEditar)
+{
+    <div class="modal" tabindex="-1" style="display:block">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick=CerrarModal></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Editar socio @socio.Id</h4>
+
+                    <EditForm Model="socio" OnValidSubmit="Guardar">
+                        <DataAnnotationsValidator />
+
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <InputText id="nombre" class="form-control" @bind-Value="@socio.Nombre" />
+                            <ValidationMessage For="@(() => socio.Nombre)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos:</label>
+                            <InputText id="apellidos" class="form-control" @bind-Value="@socio.Apellidos" />
+                            <ValidationMessage For="@(() => socio.Apellidos)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Telefono:</label>
+                            <InputText id="telefono" class="form-control" @bind-Value="@socio.Telefono" />
+                            <ValidationMessage For="@(() => socio.Telefono)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo:</label>
+                            <InputText id="correo" class="form-control" @bind-Value="@socio.Correo" />
+                            <ValidationMessage For="@(() => socio.Correo)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="ingreso">Fecha de ingreso:</label>
+                            <InputDate id="ingreso" class="form-control" @bind-Value="@socio.Ingreso" />
+                            <ValidationMessage For="@(() => socio.Ingreso)" />
+                        </div>
+
+                        <br /> <button type="submit" class="btn btn-primary">Guardar </button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick=CerrarModal>Cancelar</button>
+
+                    </EditForm>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@code {
+    private List<Socio> listaSocios;
+    Socio socio = new Socio();
+
+    private bool modalEliminar = false;
+    private bool modalEditar = false;
+    private int ID = 0;
+
+    private void CerrarModal()
+    {
+        modalEliminar = false;
+        modalEditar = false;
+    }
+
+    protected async Task Guardar()
+    {
+        await SocioService.Editar(socio);
+        modalEditar = false;
+        listaSocios = await SocioService.Listar();
+    }
+
+    private void AbrirModalEditar(Socio _socio)
+    {
+        modalEditar = true;
+        socio = _socio;
+    }
+
+    private async Task BorrarSocio()
+    {
+        await SocioService.Borrar(ID);
+        modalEliminar = false;
+        listaSocios = await SocioService.Listar();
+    }
+
+    private void AbrirModal(int id)
+    {
+        modalEliminar = true;
+        ID = id;
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+       try
+        {
+            listaSocios = await SocioService.Listar();
+
+        }
+        catch (Exception)
+        {
+            
+            throw;
+        }
+    }
+}

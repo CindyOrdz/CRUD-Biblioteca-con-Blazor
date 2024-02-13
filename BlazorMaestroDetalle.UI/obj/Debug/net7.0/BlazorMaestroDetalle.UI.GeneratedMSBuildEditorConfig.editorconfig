@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorMaestroDetalle.UI
+build_property.RootNamespace = BlazorMaestroDetalle.UI
+build_property.ProjectDir = D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Documents\Software avances capacitacion\31-05-2023\TablaEventosTeclado_ModalBusqueda\BlazorMaestroDetalle\BlazorMaestroDetalle.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Libro/AgregarLibro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9cQWdyZWdhckxpYnJvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Libro/ListarLibros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9cTGlzdGFyTGlicm9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Prestamo/HistorialPrestamos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc3RhbW9cSGlzdG9yaWFsUHJlc3RhbW9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Prestamo/SolicitarPrestamo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc3RhbW9cU29saWNpdGFyUHJlc3RhbW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Socio/ListaSocios.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29jaW9cTGlzdGFTb2Npb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Socio/PrincipalSocio.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29jaW9cUHJpbmNpcGFsU29jaW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-xo30uc7kji
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-djxfatsmaf
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Software avances capacitacion/31-05-2023/TablaEventosTeclado_ModalBusqueda/BlazorMaestroDetalle/BlazorMaestroDetalle.UI/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
